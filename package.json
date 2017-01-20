@@ -6,8 +6,9 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "build:watch": "npm run build -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Revolaution/js-workshop.git"
@@ -19,7 +20,8 @@
     "babel-loader": "^6.2.10",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "react": "^15.4.2",
