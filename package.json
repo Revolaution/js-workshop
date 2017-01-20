@@ -4,9 +4,10 @@
   "description": "ryan-oglesby-js-workshop",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ -d dist/",
+    "build": "webpack --progress --colors",
+    "build:watch": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+},
   "repository": {
     "type": "git",
     "url": "https://github.com/Revolaution/js-workshop.git"
@@ -15,7 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.22.2",
+    "babel-loader": "^6.2.10",
     "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0"
+    "babel-preset-react": "^6.22.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
