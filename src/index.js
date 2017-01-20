@@ -1,10 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
 
-import postTweet from "./postTweet";
-import TweetBox from "./TweetBox";
+import App from "./App";
 
 ReactDOM.render(
-  <TweetBox placeholder="What're you thinking?" postTweet={postTweet} />,
+  <App />,
   document.getElementById('root')
 );
