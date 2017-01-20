@@ -1,0 +1,21 @@
+{
+  "name": "js-workshop",
+  "version": "1.0.0",
+  "description": "ryan-oglesby-js-workshop",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ -d dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ryanlau",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0"
+  }
+}
