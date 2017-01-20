@@ -8,12 +8,13 @@
 <body>
   <div id="root"></div>
 
+  <script type="text/javascript" src="TweetBox.js"></script>
   <script type="text/javascript">
     // identifier | properties like class | children or nested elements of that component
-    var helloWorld = React.createElement('div', null, "Hello world");
+    // var helloWorld = React.createElement('div', null, "Hello world");
 
     ReactDOM.render(
-      helloWorld,
+      React.createElement(TweetBox, {placeholder: "What's happening?"}),
       document.getElementById('root')
     );
   </script>
