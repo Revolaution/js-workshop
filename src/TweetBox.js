@@ -15,7 +15,8 @@ class TweetBox extends React.Component {
   }
 
   handleSubmit() {
-    this.props.postTweet(this.state.tweet);
+    const {postTweet} = this.props;
+    postTweet(this.state.tweet);
     this.setState({tweet: ""});
   }
 
